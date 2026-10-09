@@ -1,0 +1,398 @@
+[
+  {
+    "id": "welcome",
+    "title": "Welcome",
+    "group": "Getting started",
+    "note": "A memorable first impression, with a single clear action and a sign-in shortcut."
+  },
+  {
+    "id": "intro-care",
+    "title": "Everyday care",
+    "group": "Getting started",
+    "note": "Introduce the daily care timeline and fast logging."
+  },
+  {
+    "id": "intro-family",
+    "title": "Shared care",
+    "group": "Getting started",
+    "note": "Explain the care circle: everyone can see who did what."
+  },
+  {
+    "id": "intro-health",
+    "title": "Health in one place",
+    "group": "Getting started",
+    "note": "Introduce the health passport and sitter handoff."
+  },
+  {
+    "id": "signup",
+    "title": "Create account",
+    "group": "Getting started",
+    "note": "Email registration with terms acknowledgement and alternative sign-in options."
+  },
+  {
+    "id": "signin",
+    "title": "Sign in",
+    "group": "Getting started",
+    "note": "Existing-account entry with password recovery."
+  },
+  {
+    "id": "forgot",
+    "title": "Reset password",
+    "group": "Getting started",
+    "note": "Request a recovery link without exposing whether an account exists."
+  },
+  {
+    "id": "reset-sent",
+    "title": "Check your inbox",
+    "group": "Getting started",
+    "note": "A clear recovery confirmation and route back to sign-in."
+  },
+  {
+    "id": "consent",
+    "title": "Ad preferences",
+    "group": "Getting started",
+    "note": "Equal-choice consent controls with a granular preference screen."
+  },
+  {
+    "id": "permissions",
+    "title": "Notifications",
+    "group": "Getting started",
+    "note": "Explain reminder permissions before the native permission request."
+  },
+  {
+    "id": "add-pet",
+    "title": "Add your pet",
+    "group": "Pet setup",
+    "note": "A welcoming first step: photo, name, and species."
+  },
+  {
+    "id": "pet-details",
+    "title": "Pet details",
+    "group": "Pet setup",
+    "note": "Optional details support a useful profile without blocking setup."
+  },
+  {
+    "id": "routine-setup",
+    "title": "Build a routine",
+    "group": "Pet setup",
+    "note": "Starter tasks with editable timing and no medical assumptions."
+  },
+  {
+    "id": "ready",
+    "title": "You’re all set",
+    "group": "Pet setup",
+    "note": "Completion feedback with the next action clearly visible."
+  },
+  {
+    "id": "home",
+    "title": "Today",
+    "group": "Daily care",
+    "note": "The daily care overview shows progress, next tasks, and who completed care."
+  },
+  {
+    "id": "schedule",
+    "title": "Care calendar",
+    "group": "Daily care",
+    "note": "Browse the weekly routine and complete or inspect a task."
+  },
+  {
+    "id": "task",
+    "title": "Task details",
+    "group": "Daily care",
+    "note": "Show timing, assignee, instructions, and completion status."
+  },
+  {
+    "id": "log",
+    "title": "Log care",
+    "group": "Daily care",
+    "note": "A quick action hub with a visible pet selector."
+  },
+  {
+    "id": "feeding",
+    "title": "Log a meal",
+    "group": "Daily care",
+    "note": "Track food amount, timing, and notes."
+  },
+  {
+    "id": "walk",
+    "title": "Track a walk",
+    "group": "Daily care",
+    "note": "A simple timer with pause, resume, and a manual-entry alternative."
+  },
+  {
+    "id": "walk-summary",
+    "title": "Walk summary",
+    "group": "Daily care",
+    "note": "Review duration and notes before adding a walk to the shared timeline."
+  },
+  {
+    "id": "wellbeing",
+    "title": "Wellbeing check-in",
+    "group": "Daily care",
+    "note": "Record observations and mood without diagnostic claims."
+  },
+  {
+    "id": "history",
+    "title": "Care history",
+    "group": "Daily care",
+    "note": "A readable shared timeline identifies the pet and person for each entry."
+  },
+  {
+    "id": "care-saved",
+    "title": "Care logged",
+    "group": "Daily care",
+    "note": "Confirm success and return to the daily overview."
+  },
+  {
+    "id": "pets",
+    "title": "My pets",
+    "group": "Pets & health",
+    "note": "Manage multiple pets from individual, visual profile cards."
+  },
+  {
+    "id": "profile",
+    "title": "Pet profile",
+    "group": "Pets & health",
+    "note": "The central entry to health, routine, care circle, and emergency information."
+  },
+  {
+    "id": "edit-pet",
+    "title": "Edit pet",
+    "group": "Pets & health",
+    "note": "Edit personal and identifying details with clear save feedback."
+  },
+  {
+    "id": "passport",
+    "title": "Health passport",
+    "group": "Pets & health",
+    "note": "A portable summary of identification and health records with deliberate sharing."
+  },
+  {
+    "id": "vaccines",
+    "title": "Vaccinations",
+    "group": "Pets & health",
+    "note": "Separate recorded doses from scheduled due dates."
+  },
+  {
+    "id": "add-vaccine",
+    "title": "Add vaccination",
+    "group": "Pets & health",
+    "note": "Record vet-provided vaccine information and an optional follow-up."
+  },
+  {
+    "id": "medications",
+    "title": "Medications",
+    "group": "Pets & health",
+    "note": "Keep dosage instructions and the last administered event together."
+  },
+  {
+    "id": "add-medication",
+    "title": "Add medication",
+    "group": "Pets & health",
+    "note": "Use the prescribed dosage verbatim; reminders do not invent treatment."
+  },
+  {
+    "id": "weight",
+    "title": "Weight trends",
+    "group": "Pets & health",
+    "note": "A labelled weight chart, unit control, and dated entries."
+  },
+  {
+    "id": "add-weight",
+    "title": "Log weight",
+    "group": "Pets & health",
+    "note": "A focused measurement entry with pet and unit context."
+  },
+  {
+    "id": "records",
+    "title": "Health documents",
+    "group": "Pets & health",
+    "note": "A searchable record vault with document types and dates."
+  },
+  {
+    "id": "add-record",
+    "title": "Add document",
+    "group": "Pets & health",
+    "note": "A file picker, document metadata, and upload guidance."
+  },
+  {
+    "id": "record",
+    "title": "Document details",
+    "group": "Pets & health",
+    "note": "Review a document and its associated pet before sharing or download."
+  },
+  {
+    "id": "visits",
+    "title": "Vet visits",
+    "group": "Pets & health",
+    "note": "Upcoming appointments and visit history."
+  },
+  {
+    "id": "add-visit",
+    "title": "Book a reminder",
+    "group": "Pets & health",
+    "note": "Record an existing appointment; it does not book with the clinic."
+  },
+  {
+    "id": "vet",
+    "title": "Vet contacts",
+    "group": "Pets & health",
+    "note": "Keep the usual clinic and emergency contacts accessible."
+  },
+  {
+    "id": "emergency",
+    "title": "Emergency card",
+    "group": "Pets & health",
+    "note": "Ad-free access to critical contacts and relevant pet information."
+  },
+  {
+    "id": "circle",
+    "title": "Care circle",
+    "group": "Shared care",
+    "note": "Roles, membership, and recent shared actions."
+  },
+  {
+    "id": "invite",
+    "title": "Invite a caregiver",
+    "group": "Shared care",
+    "note": "Preview an invitation with a deliberate role and pet scope."
+  },
+  {
+    "id": "member",
+    "title": "Caregiver details",
+    "group": "Shared care",
+    "note": "Manage role, responsibilities, and access."
+  },
+  {
+    "id": "handoff",
+    "title": "Sitter handoff",
+    "group": "Shared care",
+    "note": "Set a time-bound handoff and review everything the sitter will receive."
+  },
+  {
+    "id": "sitter",
+    "title": "Sitter care guide",
+    "group": "Shared care",
+    "note": "A practical pet-specific guide with meals, routine, and contacts."
+  },
+  {
+    "id": "handoff-ready",
+    "title": "Handoff ready",
+    "group": "Shared care",
+    "note": "Show link expiry and the ability to stop sharing."
+  },
+  {
+    "id": "insights",
+    "title": "Care insights",
+    "group": "Explore & more",
+    "note": "Summarize logged activity with transparent units and no health score."
+  },
+  {
+    "id": "library",
+    "title": "Care library",
+    "group": "Explore & more",
+    "note": "Browse practical care content and clearly separated sponsored placements."
+  },
+  {
+    "id": "article",
+    "title": "Care article",
+    "group": "Explore & more",
+    "note": "An editorial layout with a save action and related content."
+  },
+  {
+    "id": "expenses",
+    "title": "Pet expenses",
+    "group": "Explore & more",
+    "note": "A simple dated spending log with totals and categories."
+  },
+  {
+    "id": "add-expense",
+    "title": "Add expense",
+    "group": "Explore & more",
+    "note": "Capture category, currency, and amount with receipt support."
+  },
+  {
+    "id": "reminders",
+    "title": "Reminders",
+    "group": "Explore & more",
+    "note": "Manage upcoming and recurring reminders."
+  },
+  {
+    "id": "add-reminder",
+    "title": "New reminder",
+    "group": "Explore & more",
+    "note": "Create a pet-specific recurring reminder and assign a caregiver."
+  },
+  {
+    "id": "notifications",
+    "title": "Activity inbox",
+    "group": "Explore & more",
+    "note": "Reminders, shared-care activity, and document updates."
+  },
+  {
+    "id": "more",
+    "title": "More",
+    "group": "Explore & more",
+    "note": "A quiet home for settings, expenses, learning, and support."
+  },
+  {
+    "id": "settings",
+    "title": "Settings",
+    "group": "Account & states",
+    "note": "Account, units, notifications, privacy, and data controls."
+  },
+  {
+    "id": "account",
+    "title": "Your account",
+    "group": "Account & states",
+    "note": "Basic account details and deliberate account deletion."
+  },
+  {
+    "id": "notification-settings",
+    "title": "Notification settings",
+    "group": "Account & states",
+    "note": "Separate necessary care reminders from optional updates."
+  },
+  {
+    "id": "privacy",
+    "title": "Privacy & ads",
+    "group": "Account & states",
+    "note": "Manage ad choices and shared-data access; preferences can be changed later."
+  },
+  {
+    "id": "premium",
+    "title": "Pet care Plus",
+    "group": "Account & states",
+    "note": "An optional ad-free plan that preserves all essential care features for free users."
+  },
+  {
+    "id": "help",
+    "title": "Help & support",
+    "group": "Account & states",
+    "note": "Searchable practical help with a support entry point."
+  },
+  {
+    "id": "empty",
+    "title": "No pets yet",
+    "group": "Account & states",
+    "note": "A warm empty state with a single contextual action."
+  },
+  {
+    "id": "offline",
+    "title": "You’re offline",
+    "group": "Account & states",
+    "note": "Show what remains available and make sync status explicit."
+  },
+  {
+    "id": "error",
+    "title": "Upload interrupted",
+    "group": "Account & states",
+    "note": "Recoverable failure with retry and preservation of form context."
+  },
+  {
+    "id": "delete",
+    "title": "Delete account",
+    "group": "Account & states",
+    "note": "A deliberate, typed confirmation for an irreversible account action."
+  }
+]

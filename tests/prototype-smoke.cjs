@@ -1,0 +1,21 @@
+const fs=require('fs'),vm=require('vm'),assert=require('assert'),path=require('path');
+const root=path.resolve(__dirname,'..');
+const elements=new Map(),handlers={},registered=[];
+function element(id){if(!elements.has(id))elements.set(id,{id,dataset:{},value:'',innerHTML:'',textContent:'',hidden:false,classList:{toggle(){},add(){},remove(){}},addEventListener(){},close(){this.closed=true},querySelector(){return {scrollTop:0}},offsetWidth:390,prepend(){},insertAdjacentHTML(pos,s){this.innerHTML+=s}});return elements.get(id)}
+const context={console,setTimeout:()=>0,clearTimeout(){},setInterval:()=>0,clearInterval(){},URL,Blob,location:{hash:''},navigator:{},window:{addEventListener(){}},FormData:class{constructor(f){this.values=f.values}[Symbol.iterator](){return Object.entries(this.values)[Symbol.iterator]()}},document:{title:'',modelContext:{registerTool:t=>registered.push(t)},getElementById:element,querySelectorAll:()=>[],querySelector:()=>({disabled:false,scrollTop:0,prepend(){}}),addEventListener:(n,h)=>handlers[n]=h,createElement:()=>({click(){},setAttribute(){},classList:{toggle(){},add(){},remove(){}}}),body:{append(){}}}};
+vm.createContext(context);vm.runInContext(fs.readFileSync(path.join(root,'dist/app.js'),'utf8')+'\n'+fs.readFileSync(path.join(root,'dist/design.js'),'utf8'),context);
+const evaluate=s=>vm.runInContext(s,context),screens=evaluate('screens');
+assert(screens.length>=60);
+const markup={};for(const s of screens){const html=evaluate(`screen(${JSON.stringify(s.id)})`);assert(html.includes('mobile-screen'),s.id);assert(!html.includes('undefined'),s.id+' undefined text');assert(!html.includes('NaN'),s.id+' NaN text');for(const m of html.matchAll(/data-go="([^"]+)"/g))assert(screens.some(s=>s.id===m[1])||m[1]==='gallery',s.id+' bad route '+m[1]);for(const m of html.matchAll(/src="(assets\/[^"]+)"/g))assert(fs.existsSync(path.join(root,'dist',m[1])),m[1]);markup[s.id]=html;evaluate(`go(${JSON.stringify(s.id)})`)}
+evaluate("view='gallery';render()");assert(element('gallery-grid').innerHTML.includes('gallery-phone'));
+evaluate("view='system';render()");assert(element('system-view').innerHTML.includes('Complete screen inventory'));
+function submit(id,next,values,checked={}){const f={dataset:{form:id,next},values,reportValidity:()=>true,querySelector:s=>({checked:checked[s]??true})};handlers.submit({preventDefault(){},target:{closest:()=>f}})}
+submit('feeding','care-saved',{meal:'Breakfast',amount:'80',unit:'g',time:'08:15'});assert(evaluate('state.history[0].title')==='Breakfast · 80 g');assert(evaluate('current')==='care-saved');
+submit('expense','expenses',{title:'Cat food',amount:'20',category:'Food',currency:'EUR (€)',date:'2026-10-09'});assert(evaluate("screen('expenses')").includes('€20.00'));assert(!evaluate("screen('expenses')").includes('£65'));
+submit('reminder','reminders',{title:'Brush coat',time:'17:00',assignee:'Alex Carter',type:'Grooming',repeat:'Every day'});assert(evaluate("state.tasks.some(t=>t.title==='Brush coat')"));
+submit('handoff','sitter',{sitter:'Sam',from:'2026-10-19',until:'2026-10-16',notes:''});assert(evaluate('state.handoff')===null);submit('handoff','sitter',{sitter:'Sam',from:'2026-10-16',until:'2026-10-19',notes:'Blue harness'});assert(evaluate('state.handoff.sitter')==='Sam');
+submit('weight','weight',{amount:'22.0462',unit:'lb',date:'2026-10-09'});assert(evaluate('state.weights[0].amount')==='10.0');
+submit('routine','ready',{morning:'08:00',evening:'18:00'},{'[name=meals]':false,'[name=walks]':false,'[name=water]':false});assert(!evaluate("screen('home')").includes('NaN'));assert(evaluate("screen('task')").includes('Evening walk'));
+assert(registered.length===1);const result=registered[0].execute({screenId:'home'});assert(result.screenId==='home');assert.throws(()=>registered[0].execute({screenId:'nonsense'}));
+if(process.env.EXPORT_SCREEN_INVENTORY)fs.writeFileSync(path.join(root,'docs/screens.json'),JSON.stringify(screens,null,2)+'\n');
+console.log(JSON.stringify({screens:screens.length,allScreensRender:true,routesAndAssetsValid:true,flows:['meal logging','expense currencies','care reminders','sitter dates','weight units','empty routine'],webmcp:'registration and valid/invalid navigation tested in simulated API context',browserQA:'not run: compatible Sites browser preview is unavailable for static HTML'}));

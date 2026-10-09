@@ -1,0 +1,8 @@
+{
+  "name": "pet-care-design-prototype",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Complete 66-screen pet-care mobile UI/UX prototype; app name undecided.",
+  "scripts": {"start": "node scripts/serve.mjs", "check": "node tests/prototype-smoke.cjs"},
+  "engines": {"node": ">=18"}
+}

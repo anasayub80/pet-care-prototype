@@ -1,0 +1,132 @@
+[
+  {
+    "path": ".gitignore",
+    "bytes": 52,
+    "sha256": "cbc0137c7f4e27cf75756c69f1e1dd39a5710900dbce14394fae1a2b96f25400"
+  },
+  {
+    "path": ".openai/hosting.json",
+    "bytes": 106,
+    "sha256": "eaf84a3225cc2daf2adea8a7b666d115bc733b3c59286d1d72d3d38c0e9d886b"
+  },
+  {
+    "path": "README.md",
+    "bytes": 3503,
+    "sha256": "61e1346ac8d03c20fc5064b17ceba7d1a28f7acf37953de809da2ab74ab4f246"
+  },
+  {
+    "path": "assets/originals/cozy-friends.png",
+    "bytes": 2220286,
+    "sha256": "cde697e50b8f2b661636187a8795375b77cdc825b087b20e4f7e9f8025d94665"
+  },
+  {
+    "path": "assets/originals/friends.png",
+    "bytes": 2039070,
+    "sha256": "7a868b85c3272a5914239d21361c4ca4498fb0b3d3f82fce19ba479cae9cea1f"
+  },
+  {
+    "path": "assets/originals/health-scene.png",
+    "bytes": 1401696,
+    "sha256": "436104c2028ba00c4d8ff963c94eeb6fbebfef6d5e4350627090fcf0c169d4bc"
+  },
+  {
+    "path": "assets/originals/luna.png",
+    "bytes": 2501109,
+    "sha256": "1c6afc1b7ada146797e1af594630834f050399a90726b50c2f83c57c24401c3a"
+  },
+  {
+    "path": "assets/originals/milo.png",
+    "bytes": 2294854,
+    "sha256": "386efd8676becfefaf45c142c45cec7016b344c16082c31b112d4117946caf10"
+  },
+  {
+    "path": "assets/originals/playful-dog.png",
+    "bytes": 2366917,
+    "sha256": "9abae1820a16c65f8e26da48396f9fa007606529c57d772168b298a3bfd527da"
+  },
+  {
+    "path": "dist/app.js",
+    "bytes": 97755,
+    "sha256": "040ced6ac0417bca69119935d90361d0a25ab8976ef8260c9368f3b6a818b4a7"
+  },
+  {
+    "path": "dist/assets/cozy-friends.webp",
+    "bytes": 228004,
+    "sha256": "3b29d5b25824a306b4ca05a0ed861f0c6141070d9f42b166ccb35e159b03efdf"
+  },
+  {
+    "path": "dist/assets/friends.webp",
+    "bytes": 81012,
+    "sha256": "5645668293d2bbf0b9605202e0cf741efa44fabf77563e698ecba45e6b9d3c75"
+  },
+  {
+    "path": "dist/assets/health-scene.webp",
+    "bytes": 147114,
+    "sha256": "f33554b870c85691bec977ba067d16a52b1a749ab66e6392d3d28f2cd787e30b"
+  },
+  {
+    "path": "dist/assets/luna.webp",
+    "bytes": 127684,
+    "sha256": "e1d9fd8cb74b1f550a71e99921149d6af26d0754a865d19a14bce805533f3e29"
+  },
+  {
+    "path": "dist/assets/milo.webp",
+    "bytes": 102468,
+    "sha256": "758e9c4b5e2d22d9d8755b036aa0e51bdd4a36cf8a85f69041992ee979a2d67b"
+  },
+  {
+    "path": "dist/assets/playful-dog.webp",
+    "bytes": 172940,
+    "sha256": "6207ccd308de87543cf4fa62f37fa71bac8a785f03d9be9da375a3b29a847d4b"
+  },
+  {
+    "path": "dist/design.css",
+    "bytes": 36438,
+    "sha256": "2562c0240cbba81cfb2b6673939700044503dbc454a31bdd20527b6ff9bb7f95"
+  },
+  {
+    "path": "dist/design.js",
+    "bytes": 18850,
+    "sha256": "b684d0366840aa52a3f4bc9f6a108fe0c3facc02ffda33c53fe66429fb160a5b"
+  },
+  {
+    "path": "dist/index.html",
+    "bytes": 3188,
+    "sha256": "a07b84c66ce2a4d9eb6eeff01c78576dc9a72f7e97d34f2b7a9e6cb1c6586e8b"
+  },
+  {
+    "path": "dist/style.css",
+    "bytes": 27203,
+    "sha256": "45a2373f860a74b693a724a7398d4f061152735ca06d3adb92d2b88d09b7988f"
+  },
+  {
+    "path": "docs/assets.md",
+    "bytes": 942,
+    "sha256": "56b7945148099b9c10ae29d6915af50e92eff4190a83a8274e8687107d41619e"
+  },
+  {
+    "path": "docs/design-handoff.md",
+    "bytes": 2679,
+    "sha256": "22660fc4ef4f987ffcc05b688e713ac0029bb6a7469e6d3c2ba38ea34b0815df"
+  },
+  {
+    "path": "docs/screens.json",
+    "bytes": 10938,
+    "sha256": "8baf5485791171274d823c5301cc9a21143923569709d1ed3c8208c65e6ca137"
+  },
+  {
+    "path": "package.json",
+    "bytes": 299,
+    "sha256": "e22772cdccd63b9bff01e931d808227cf4924fc91326e7e7307d4a42daaf7eb0"
+  },
+  {
+    "path": "scripts/serve.mjs",
+    "bytes": 1211,
+    "sha256": "86ba56dec7878b8b7a73f17c1d5aff2be89eed921a6ac356b0dd6c516f255e02"
+  },
+  {
+    "path": "tests/prototype-smoke.cjs",
+    "bytes": 4346,
+    "sha256": "026bb7d2360c5e223a26c25585993bf71e1d4e63a782e262120e11b654b31afd"
+  }
+]
