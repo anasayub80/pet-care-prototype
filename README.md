@@ -4,6 +4,10 @@ Complete 66-screen pet-care mobile UI/UX prototype and review website. **The app
 
 [View the private live preview](https://pet-care-design.m-anasayub80.chatgpt.site)
 
+## Product requirements
+
+[Complete product and engineering requirements](docs/project-requirements.md): feature specifications, acceptance criteria, all 66 screens, permissions, data model, backend integrations, offline behavior, design/motion, release phases, and open decisions. Production requirements are distinguished from the current simulated prototype.
+
 ## Run locally
 
 Requires Node.js 18 or newer. There are no external npm dependencies and no build step.

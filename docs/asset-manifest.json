@@ -11,8 +11,8 @@
   },
   {
     "path": "README.md",
-    "bytes": 3503,
-    "sha256": "61e1346ac8d03c20fc5064b17ceba7d1a28f7acf37953de809da2ab74ab4f246"
+    "bytes": 3865,
+    "sha256": "10a24f7cadb9472c5882766f74f88cdf5df92c08ab63969b8c8a992e73db5d81"
   },
   {
     "path": "assets/originals/cozy-friends.png",
@@ -108,6 +108,11 @@
     "path": "docs/design-handoff.md",
     "bytes": 2679,
     "sha256": "22660fc4ef4f987ffcc05b688e713ac0029bb6a7469e6d3c2ba38ea34b0815df"
+  },
+  {
+    "path": "docs/project-requirements.md",
+    "bytes": 64392,
+    "sha256": "2f05c96dbaf9ffc5f3dc6d27b87c3a580dff89a3036c2af4c5d943df7bae7a6c"
   },
   {
     "path": "docs/screens.json",
